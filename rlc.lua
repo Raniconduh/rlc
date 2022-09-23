@@ -76,7 +76,7 @@ function log10(a)
 end
 
 function ln(a)
-	return stack_replace1(math.log(e))
+	return stack_replace1(math.log(a))
 end
 
 operations = {
