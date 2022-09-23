@@ -15,8 +15,11 @@ Each number or constant will be pushed onto the stack and, when an operation is 
 
 * `sin`: Take the sine of the top value
 * `cos`: Take the cosine of the top value
-* `tan`: Takw the tangent of the top value
+* `tan`: Take the tangent of the top value
 * `rad`: Convert the top value (degrees) to radians
+* `deg`: Convert the top value (radians) to degrees
+* `log`: Take the base 10 logarithm of the top value
+* `ln` : Take the natural logarithm of the top value
 
 ## Functions
 

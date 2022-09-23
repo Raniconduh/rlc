@@ -67,6 +67,18 @@ function rad(a)
 	return stack_replace1(math.rad(a))
 end
 
+function deg(a)
+	return stack_replace1(math.deg(a))
+end
+
+function log10(a)
+	return stack_replace1(math.log(a, 10))
+end
+
+function ln(a)
+	return stack_replace1(math.log(e))
+end
+
 operations = {
 	['+'] = {
 		desc = "Add top two numbers in stack",
@@ -99,7 +111,7 @@ operations = {
 	},
 
 	['v'] = {
-		desc = "Sqaure root top number in stack",
+		desc = "Square root top number in stack",
 		req = 1,
 		func = sqrt
 	},
@@ -117,15 +129,33 @@ operations = {
 	},
 
 	['tan'] = {
-		desc = "Tangeant the top number in stack",
+		desc = "Tangent the top number in stack",
 		req = 1,
 		func = tan
 	},
 
 	['rad'] = {
-		desc = 'Convert degrees in top of stack to radians',
+		desc = "Convert degrees in top of stack to radians",
 		req = 1,
 		func = rad
+	},
+
+	['deg'] = {
+		desc = "Convert radians in top of stack to degrees",
+		req = 1,
+		func = deg
+	},
+
+	['log'] = {
+		desc = "Take the base 10 logarithm of top number in stack",
+		req = 1,
+		func = log10
+	},
+
+	['ln'] = {
+		desc = "Take the natural logarithm of top number in stack",
+		req = 1,
+		func = ln
 	},
 
 	['p'] = {
