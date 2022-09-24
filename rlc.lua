@@ -75,6 +75,10 @@ function log10(a)
 	return stack_replace1(math.log(a, 10))
 end
 
+function lb(b, n)
+	return stack_replace2(math.log(n, b))
+end
+
 function ln(a)
 	return stack_replace1(math.log(a))
 end
@@ -150,6 +154,12 @@ operations = {
 		desc = "Take the base 10 logarithm of top number in stack",
 		req = 1,
 		func = log10
+	},
+
+	['lb'] = {
+		desc = "Using the second number as a base, find the logarithm of the top number",
+		req = 2,
+		func = lb
 	},
 
 	['ln'] = {

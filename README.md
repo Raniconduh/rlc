@@ -19,6 +19,7 @@ Each number or constant will be pushed onto the stack and, when an operation is 
 * `rad`: Convert the top value (degrees) to radians
 * `deg`: Convert the top value (radians) to degrees
 * `log`: Take the base 10 logarithm of the top value
+* `lb`: Using the second element of the stack as a base, find the logarithm of the top element
 * `ln` : Take the natural logarithm of the top value
 
 ## Functions
@@ -57,4 +58,6 @@ $ rlc
 inf
 > 0 0 /
 nan
+> 2 8 lb
+3.0
 ```
