@@ -63,6 +63,18 @@ function tan(a)
 	return stack_replace1(math.tan(a))
 end
 
+function asin(a)
+	return stack_replace1(math.asin(a))
+end
+
+function acos(a)
+	return stack_replace1(math.acos(a))
+end
+
+function atan(a)
+	return stack_replace1(math.atan(a))
+end
+
 function rad(a)
 	return stack_replace1(math.rad(a))
 end
@@ -136,6 +148,24 @@ operations = {
 		desc = "Tangent the top number in stack",
 		req = 1,
 		func = tan
+	},
+
+	['asin'] = {
+		desc = "Arcsine the top number in stack",
+		req = 1,
+		func = asin
+	},
+
+	['acos'] = {
+		desc = "Arccosine the top number in stack",
+		req = 1,
+		func = acos
+	},
+
+	['atan'] = {
+		desc = "Arctangent the top number in stack",
+		req = 1,
+		func = atan
 	},
 
 	['rad'] = {

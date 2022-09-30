@@ -4,6 +4,8 @@ A Reverse Polish Notation calculator written entirely in lua. It has an infinite
 
 Each number or constant will be pushed onto the stack and, when an operation is called, the elements on the stack will be manipulated.
 
+Trigonometric functions perform operations in radians. (Both input and outputs to the functions should be in radians.)
+
 ## Operations
 
 * `+`: Add the top two numbers in the stack
@@ -13,14 +15,17 @@ Each number or constant will be pushed onto the stack and, when an operation is 
 * `^`: Raise the second value in the stack to the power of the first value in the stack
 * `v`: Take the square root of the top value of the stack
 
-* `sin`: Take the sine of the top value
-* `cos`: Take the cosine of the top value
-* `tan`: Take the tangent of the top value
-* `rad`: Convert the top value (degrees) to radians
-* `deg`: Convert the top value (radians) to degrees
-* `log`: Take the base 10 logarithm of the top value
-* `lb`: Using the second element of the stack as a base, find the logarithm of the top element
-* `ln` : Take the natural logarithm of the top value
+* `sin` : Take the sine of the top value
+* `cos` : Take the cosine of the top value
+* `tan` : Take the tangent of the top value
+* `asin`: Take the arcsine of the top value
+* `acos`: Take the arccosine of the top value
+* `atan`: Take the arctangent of the top value
+* `rad` : Convert the top value (degrees) to radians
+* `deg` : Convert the top value (radians) to degrees
+* `log` : Take the base 10 logarithm of the top value
+* `lb`  : Using the second element of the stack as a base, find the logarithm of the top element
+* `ln`  : Take the natural logarithm of the top value
 
 ## Functions
 
